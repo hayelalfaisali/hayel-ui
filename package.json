@@ -4,7 +4,7 @@
   "description": "Headless, open, and fully customizable React 19 UI library with Tailwind CSS",
   "type": "module",
   "bin": {
-    "hayel-ui": "./bin/cli.js"
+    "hayel-ui": "bin/cli.js"
   },
   "files": [
     "bin",
@@ -25,7 +25,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Hayelalfaisali/hayel-ui.git"
+    "url": "git+https://github.com/Hayelalfaisali/hayel-ui.git"
   },
   "scripts": {
     "dev": "vite",

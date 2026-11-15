@@ -31,9 +31,12 @@ const COMPONENTS = {
 }
 
 function copyRecursive(src, dest) {
+  if (src.includes(".test.") || src.includes(".spec.")) return
+
   if (fs.statSync(src).isDirectory()) {
     fs.mkdirSync(dest, { recursive: true })
     for (const file of fs.readdirSync(src)) {
+      if (file.includes(".test.") || file.includes(".spec.")) continue
       copyRecursive(path.join(src, file), path.join(dest, file))
     }
   } else {
@@ -74,4 +77,4 @@ if (comp.extra) {
   }
 }
 
-console.log("Done! You have 100% control over the source code.")
+console.log("✔ Done! Ensure '@' alias points to './src' in your vite.config.ts")

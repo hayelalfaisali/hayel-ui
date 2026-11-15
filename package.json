@@ -6,6 +6,27 @@
   "bin": {
     "hayel-ui": "./bin/cli.js"
   },
+  "files": [
+    "bin",
+    "src/components/ui",
+    "src/lib",
+    "src/hooks"
+  ],
+  "keywords": [
+    "react",
+    "react19",
+    "ui",
+    "components",
+    "tailwind",
+    "headless",
+    "shadcn"
+  ],
+  "author": "Hayel Al-Faisali",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Hayelalfaisali/hayel-ui.git"
+  },
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
